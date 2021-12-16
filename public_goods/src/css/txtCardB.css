@@ -1,0 +1,19 @@
+.txtCardB {
+	width: 50%;
+	padding: 5%;
+}
+
+.txtCardB h1 {
+	font-family: 'Bebas Neue';
+}
+
+.txtCardB ul {
+	padding: 0;
+	list-style: none;
+}
+.txtCardB li {
+	padding: 5px;
+}
+.txtCardB li:before {
+	content: '✓ ';
+}

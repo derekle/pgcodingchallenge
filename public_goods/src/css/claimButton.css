@@ -1,0 +1,16 @@
+.ClaimButton {
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	background-color: lightsalmon;
+	border-color: transparent;
+}
+
+.ClaimButton :active {
+	background-color: red;
+}
+
+.ClaimButton :focus {
+	background-color: red;
+}
