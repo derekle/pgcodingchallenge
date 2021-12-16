@@ -7,6 +7,11 @@ import ClaimButton from '../components/claimButton';
 import '../css/home.css'
 
 const Home = (props) => {
+    /*
+    post-submission comments: I probably would've added a function to conditionally render the homepage + topnav based on device screen width, or through some 3rd party hook.
+    I would then encapsulate those into their own files, like <HomeMobile className="home-Mobile"/> or <HomeDesktop className="home-Desktop"/>. Then I can probably style their css accordingly.
+    I was comparing my submission and noticed some minute details were off, such as whitespace after the first section, just before the product images. 
+    */
     return (
         <div>
             <section className="Section">
