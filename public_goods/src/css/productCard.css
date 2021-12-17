@@ -1,14 +1,13 @@
-.productCard {
-	width: 50%;
+.productCard-container {
 	background-color: lightgrey;
 	text-align: center;
+	width: 100%;
 }
 
-.productCard h1 {
-	padding-top: 20px;
+.productCard-container h1 {
 	font-family: 'Bebas Neue';
 }
 
-.productCard p {
-	padding-bottom: 20px;
+#subtext {
+	padding: 0.5em;
 }
