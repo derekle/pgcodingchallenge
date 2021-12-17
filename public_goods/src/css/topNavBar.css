@@ -4,12 +4,39 @@
 	top: 0;
 	display: flex;
 	flex-direction: row;
-	padding-left: 1em;
-	padding-right: 1em;
+	justify-content: space-between;
 	background-color: white;
 }
 
-h1 {
+#topnavbar-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#topnavbar-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 75px;
+}
+
+#topnavbar-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#navButton {
+	color: black;
+	height: 75px;
+	width: 75px;
+	border-radius: 100%;
+}
+
+#logo {
 	font-weight: normal;
 	letter-spacing: 0.1em;
+	text-align: center;
+	color: black;
 }
