@@ -6,6 +6,7 @@
 .desktop section {
 	display: flex;
 	flex-direction: row;
+	height: fit-content;
 }
 
 .desktop section:nth-of-type(1) {
@@ -14,9 +15,10 @@
 
 /*mobile styling*/
 .mobile section {
-	min-height: 100vh;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
+	white-space: normal;
 }
 
 .mobile section div.ImageCard-container .ImageCard {
