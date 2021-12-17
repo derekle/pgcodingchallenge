@@ -7,7 +7,9 @@ class ClaimButton extends Component {
     }
     render() {
         return (
-            <button className="ClaimButton" onClick={this.handleOnClick}>Claim your free offer</button>
+            <div className='claimButton-container'>
+                <button className="ClaimButton" onClick={this.handleOnClick}>Claim your free offer</button>
+            </div>
         )
     }
 }
