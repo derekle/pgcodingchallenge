@@ -51,7 +51,7 @@ class TopNav extends Component{
             <div id='topnavbar-container'>
                 <div id='topnavbar-left'>
                     <Button onClick={() => { this.handleOnClick('Menu') }} id='navButton'>
-                        <DragHandleIcon  fontSize='large' />
+                        <DragHandleIcon  fontSize='medium' />
                     </Button>
                 </div>
                 <div id='topnavbar-center'>
