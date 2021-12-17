@@ -1,4 +1,7 @@
 import React from 'react';
+import MediaQuery from 'react-responsive'
+
+
 import ImageCard from '../components/imgCard';
 import TextCardA from '../components/txtCardA';
 import TextCardB from '../components/txtCardB';
@@ -14,24 +17,45 @@ const Home = (props) => {
     */
     return (
         <div>
-            <section className="Section">
-                <div>
-                    <TextCardA />
-                    <ClaimButton />
+            <MediaQuery orientation='landscape'>
+                <div className='desktop'>
+                    <section>
+                        <div className="Card">
+                            <TextCardA />
+                            <ClaimButton />
+                        </div>
+                        <ImageCard imgsrc="assets/cat_image1_desktop.png" altlabel="Feeding Cat"/>
+                    </section>
+                    <section>
+                        <ProductCard imgsrc="assets/cat_treats_fd_minnows_01 3.png" altlabel="Cat Treats Minnows" />
+                        <ProductCard imgsrc="assets/cat_treats_fd_minnows_01 3.png" altlabel="Cat Treats Minnows" />
+                    </section>
+                    <section>
+                        <ImageCard imgsrc="assets/cat_image2_desktop.png" altlabel="Feeding Cat" />
+                        <div className="Card">
+                            <TextCardB />
+                        </div>
+                    </section>
                 </div>
-                <ImageCard imgsrc="assets/cat_image1_desktop.png" altlabel="Feeding Cat"/>
-            </section>
-            <section className="Section">
-                <ProductCard imgsrc="assets/cat_treats_fd_minnows_01 3.png" altlabel="Cat Treats Minnows" />
-                <ProductCard imgsrc="assets/cat_treats_fd_minnows_01 3.png" altlabel="Cat Treats Minnows" />
-            </section>
-            <section className="Section">
-                <ImageCard imgsrc="assets/cat_image2_desktop.png" altlabel="Feeding Cat" />
-                <TextCardB />
-            </section>
+            </MediaQuery>
+            <MediaQuery orientation='portrait'>
+                <div className='mobile'>
+                    
+                    <ClaimButton />
+                    <section>
+                        <ImageCard imgsrc="assets/cat_image1_mobile.png" altlabel="Feeding Cat" />
+                        <TextCardA />
+                    </section>
+                    <section>
+                        <ProductCard imgsrc="assets/cat_treats_fd_minnows_01 3.png" altlabel="Cat Treats Minnows" />
+                        <TextCardB />
+                    </section>
+                    <section>
+                        <ImageCard imgsrc="assets/cat_image2_mobile.png" altlabel="Feeding Cat" />
+                    </section>
+                </div>
+            </MediaQuery>
         </div>
-        
-
     )
 };
 
