@@ -6,6 +6,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: white;
+	flex-wrap: nowrap;
 }
 
 #topnavbar-left {
@@ -18,25 +19,25 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 75px;
+	padding-left: 64px;
 }
 
 #topnavbar-right {
 	display: flex;
-	justify-content: center;
+	justify-content: end;
 	align-items: center;
 }
 
 #navButton {
 	color: black;
-	height: 75px;
-	width: 75px;
+	height: 64px;
 	border-radius: 100%;
 }
 
 #logo {
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 0.1em;
 	text-align: center;
 	color: black;
+	font-size: 150%;
 }
