@@ -1,3 +1,12 @@
 .txtCardA {
-	padding: 5%;
+	margin: auto;
+	padding: 2.5em;
+}
+
+.txtCardA h1 {
+	margin: auto;
+}
+
+.txtCardA li {
+	padding: 5px;
 }
