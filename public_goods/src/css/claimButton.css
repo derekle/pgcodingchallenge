@@ -7,10 +7,10 @@
 	border-color: transparent;
 }
 
-.ClaimButton :active {
-	background-color: red;
+.ClaimButton:hover {
+	background-color: rgb(255, 100, 100);
 }
 
-.ClaimButton :focus {
-	background-color: red;
+.ClaimButton:active {
+	background-color: rgb(255, 80, 80);
 }
