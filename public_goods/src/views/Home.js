@@ -7,6 +7,7 @@ import TextCardA from '../components/txtCardA';
 import TextCardB from '../components/txtCardB';
 import ProductCard from '../components/productCard';
 import ClaimButton from '../components/claimButton';
+import TopNav from '../components/topNav';
 import '../css/home.css'
 
 const Home = (props) => {
@@ -17,6 +18,7 @@ const Home = (props) => {
     */
     return (
         <div>
+            <TopNav />
             <MediaQuery orientation='landscape'>
                 <div className='desktop'>
                     <section>
@@ -40,7 +42,6 @@ const Home = (props) => {
             </MediaQuery>
             <MediaQuery orientation='portrait'>
                 <div className='mobile'>
-                    
                     <ClaimButton />
                     <section>
                         <ImageCard imgsrc="assets/cat_image1_mobile.png" altlabel="Feeding Cat" />
